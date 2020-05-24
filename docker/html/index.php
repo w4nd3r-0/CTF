@@ -28,7 +28,7 @@ function curl($url){
 if(isset($_GET['submit'])){
 		$url = $_GET['url'];
 		//echo $url."\n";
-		if(preg_match('/file|dict|\.\.\/|127.0.0.1|localhost/is', $url,$match))
+		if(preg_match('/file\:\/\/|dict|\.\.\/|127.0.0.1|localhost/is', $url,$match))
 		{
 			//var_dump($match);
 			die('别这样');
